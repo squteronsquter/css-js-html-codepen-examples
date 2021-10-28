@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+body {
+  --indigo-1: hsl(255 39% 32%);
+  --indigo-2: hsl(261 50% 10%);
+  --indigo-3: hsl(258 48% 19%);
+  
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+  background: linear-gradient(
+    to top right,
+    var(--indigo-1),
+    35%,
+    var(--indigo-2)
+  );
+}
+
+header {
+  background: var(--indigo-3);
+  box-shadow: 0 3px 5px hsl(261 50% 10% / 25%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2ch;
+  padding: 1ch;
+}
+
+nav {
+  flex: 2;
+  padding: 1ch;
+  border-radius: 1ch;
+  inline-size: calc(100% - 4ch);
+  max-inline-size: 50ch;
+  background: var(--indigo-1);
+  box-shadow: 0 2px 2px hsl(275 100% 30% / 25%);
+}
+
+nav:focus-visible:focus-within {
+  outline: 1px solid white;
+}
+
+input[type="search"] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  inline-size: 100%;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+::placeholder {
+  color: hsl(0 0% 100% / 75%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+article {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: white;
+  gap: 1ch;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.dots-vertical {
+  inline-size: 2ch;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+h1 {
+  margin-block-end: 1ch;
+  font-weight: normal;
+  font-size: clamp(2rem, 10vw, 5rem);
+}
+
+html,body {
+  block-size: 100%;
+}
+
