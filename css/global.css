@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1#page-title {
+    display: block;
+    padding-top: 10rem;
+    font-size: 8rem;    
+    font-family: sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navmenu {
+    position: absolute;
+    top: 20px;
+}
+.navmenu-container {
+    background-color: black;
+    color: blanchedalmond;
+    max-width: 38rem;
+    padding: 1rem 4rem;
+}
+ul {
+    list-style: none;
+}
+
+.navmenu-container ul li a {
+    color:whitesmoke;
+    font-family: sans-serif;
+}
+
+.navmenu-container ul li a:hover {
+    text-decoration: none;
+} 
